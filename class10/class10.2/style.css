@@ -1,0 +1,52 @@
+
+.ball{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: brown;
+    top:100px;
+    position:relative;
+    animation: balls;
+    animation-duration: 3s;
+} 
+@keyframes balls{
+    0%{
+        top:100px;
+        left:30px;
+        
+        
+    }
+    25%{
+        /* top:10px; */
+        top: 150px;
+        left:300px;
+        transform: translate(200px,150px);
+    }
+    50%{
+        top:240px;
+        left:700px;
+        transform: translate(100px,-85px);
+        /* bottom: 0px; */
+        
+    }
+    100%{
+        top:1000px;
+        left:200px;
+        transform: translate(-150px,-290px);
+
+        
+    }
+    
+} 
+.bat{
+    
+    transform: translate(650px,-100px);  
+    transition: .5s;
+    transition-delay: 1s;
+    z-index: 20px;
+
+}
+.bat:hover{
+    transform: rotateX('5deg');
+    transform: rotateY('1deg');
+}

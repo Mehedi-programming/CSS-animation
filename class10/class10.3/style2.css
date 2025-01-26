@@ -1,0 +1,35 @@
+.header,.nav,.main,.aside1,.aside2,.right-side,.footer{
+    border: 2px solid red;
+    background-color: blue;
+}
+.header{
+    grid-area:header;
+}
+.nav{
+    grid-area:nav;
+}
+.main{
+    grid-area:main;
+}
+.aside1{
+    grid-area:aside1;
+}
+.aside2{
+    grid-area:aside2;
+}
+.right-side{
+    grid-area:right-side;
+}
+.footer{
+    grid-area:footer;
+}
+body{
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "aside2 main main right-side"
+    "aside1 main main right-side"
+    "footer footer footer footer";
+}
